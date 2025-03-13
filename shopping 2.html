@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>  
+    <meta charset="UTF-8">
+<title>ShopPing</title>
+
+<script src="shopping .js"></script>
+<link rel="stylesheet" href="shopping .css">
+</head>
+<body>
+<header>
+<table class="Menu">
+    <tr>
+        <td class="TMenu"><img height="100"width="200"src="logo.png" alt=""/></td>
+        <td class="x7">Hola</td>
+        <td class="x7">Hola</td>
+        <td class="x7">Hola</td>
+        <td class="x7">Hola</td>
+        <td class="x7">Hola</td>
+        <td class="TMenu"><a href="#Calzado">Calzado</a></td>
+        <td class="TMenu"><a href="#Tecnologia">Tecnologia</a></td>
+        <td class="TMenu"><a href="#Ropa">Ropa</a></td>
+        <td class="TMenu"><a href="#Herramientas">Herramientas</a></td>
+        <td><input type="button" value="Ver Carrito" onclick="VerCarrito()"></td>
+    </tr>
+</table>
+<br><br><br><br><br>
+<center>
+<h1><div class="titulos"  id="Calzado">Tenis</div></h1></center>
+<table>
+<tr>
+    <td><img class="logos" height="200"width="200"src="TENIS-NIKE-.jpg" alt=""/></td>
+    <td class="Descripcion">Tenis Nike Modelo 1<br>Precio<br>$3000<br><input class="Cantidad" type="number" id="Cantidad1" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito1()"></td>
+    <td><img class="logos" height="200"width="200"src="tenis nike 2.jpg" alt=""/></td>
+    <td class="Descripcion">Tenis Nike Modelo 2<br>Precio<br>$2700<br><input class="Cantidad" type="number" id="Cantidad2" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito2()"></td>
+    <td><img class="logos" height="200"width="200"src="tenis nike 3.jpg" alt=""/></td>
+    <td class="Descripcion">Tenis Nike Modelo 3<br>Precio<br>$1500<br><input class="Cantidad" type="number" id="Cantidad3" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito3()"></td>
+    <td><img class="logos" height="200"width="200"src="tenis nike 4.jpg" alt=""/></td>
+    <td class="Descripcion">Tenis Nike Modelo 4<br>Precio<br>$1900<br><input class="Cantidad" type="number" id="Cantidad4" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito4()"></td>
+</tr>
+</table><br><br><br><br>
+<center>
+<h1><div class="titulos"  id="Tecnologia">Computadoras</div></h1></center>
+<table>
+<tr>
+    <td><img class="logos" height="200"width="200"src="pc.jpeg" alt=""/></td>
+    <td class="Descripcion">PC Gamer<br>Precio<br>$5700<br><input class="Cantidad" type="number" id="Cantidad5" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito5()"></td>
+    <td><img class="logos" height="200"width="200"src="escritorio.jpg" alt=""/></td>
+    <td class="Descripcion">Escritorio Gamer<br>Precio<br>$3200<br><input class="Cantidad" type="number" id="Cantidad6" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito6()"></td>
+    <td><img class="logos" height="200"width="200"src="mando.jpg" alt=""/></td>
+    <td class="Descripcion">TMando Razor<br>Precio<br>$2500<br><input class="Cantida7" type="number" id="Cantidad7" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito7()"></td>
+    <td><img class="logos" height="200"width="200"src="monitor.jpg" alt=""/></td>
+    <td class="Descripcion">Monitor Republic Of Gamers<br>Precio<br>$4000<br><input class="Cantidad" type="number" id="Cantidad8" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito8()"></td>
+</tr>
+</table><br><br><br><br>
+<center>
+<h1><div class="titulos"  id="Playeras">Playeras</div></h1></center>
+<table>
+<tr>
+        <td><img class="logos" height="200"width="200"src="Playera cc1.jpeg" alt=""/></td>
+        <td class="Descripcion">Playera Calacas Chidas 1<br>Precio<br>$200<br><input class="Cantidad" type="number" id="Cantidad9" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito9()"></td>
+        <td><img class="logos" height="200"width="200"src="Playera cc2.jpeg" alt=""/></td>
+        <td class="Descripcion">Playera Calacas Chidas 2<br>Precio<br>$200<br><input class="Cantidad" type="number" id="Cantidad10" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito10()"></td>
+        <td><img class="logos" height="200"width="200"src="Playera cc3.jpg" alt=""/></td>
+        <td class="Descripcion">Playera Calacas Chidas 3<br>Precio<br>$200<br><input class="Cantidad" type="number" id="Cantidad11" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito11()"></td>
+        <td><img class="logos" height="200"width="200"src="Playera cc4.jpg" alt=""/></td>
+        <td class="Descripcion">Playera Calacas Chidas 4<br>Precio<br>$200<br><input class="Cantidad" type="number" id="Cantidad12" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito12()"></td>
+</tr>
+</table><br><br><br><br>
+<center>
+<h1><div class="titulos"  id="Herramientas">Herramientas</div></h1></center>
+<table>
+    <tr>
+        <td><img class="logos" height="200"width="200"src="juego de brocas.jpeg" alt=""/></td>
+        <td class="Descripcion">Juego De Brocas<br>Precio<br>$500<br><input class="Cantidad" type="number" id="Cantidad13" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito13()"></td>
+        <td><img class="logos" height="200"width="200"src="juego de llaves.jpeg" alt=""/></td>
+        <td class="Descripcion">Juego De Llaves<br>Precio<br>$500<br><input class="Cantidad" type="number" id="Cantidad14" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito14()"></td>
+        <td><img class="logos" height="200"width="200"src="rotomartillo.jpg" alt=""/></td>
+        <td class="Descripcion">Rotomartillo<br>Precio<br>$2000<br><input class="Cantidad" type="number" id="Cantidad15" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito15()"></td>
+        <td><img class="logos" height="200"width="200"src="taladro.jpeg" alt=""/></td>
+        <td class="Descripcion">Taladro<br>Precio<br>$1300<br><input class="Cantidad" type="number" id="Cantidad16" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito16()"></td>
+    </tr>
+</table><br><br><br><br>
+<center>
+<h1><div class="titulos" id="Gamer">Gamer</div></h1></center>
+<table>
+    <tr>
+        <td><img class="logos" height="200"width="200"src="xbox s.jpg" alt=""/></td>
+        <td class="Descripcion">Xbox series S<br>Precio<br>$5000<br><input class="Cantidad" type="number" id="Cantidad17" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito17()"></td>
+        <td><img class="logos" height="200"width="200"src="XBOX X.jpg" alt=""/></td>
+        <td class="Descripcion">Xbox series X<br>Precio<br>$10000<br><input class="Cantidad" type="number" id="Cantidad18" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito18()"></td>
+        <td><img class="logos" height="200"width="200"src="NINTENDO SWITCH.jpg" alt=""/></td>
+        <td class="Descripcion">Nintendo Switch<br>Precio<br>$4500<br><input class="Cantidad" type="number" id="Cantidad19" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito19()"></td>
+        <td><img class="logos" height="200"width="200"src="PLAY 5.jpg" alt=""/></td>
+        <td class="Descripcion">Playstation 5<br>Precio<br>$8000<br><input class="Cantidad" type="number" id="Cantidad20" min="0" step="1" required><input type="button" value="Agregar Al Carro" onclick="Carrito20()"></td>
+        
+    </tr>
+</table><br><br><br><br>
+</body>
+</html>

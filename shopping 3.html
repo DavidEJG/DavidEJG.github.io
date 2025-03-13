@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>  
+    <meta charset="UTF-8">
+<title>ShopPing</title>
+
+<script src="shopping .js"></script>
+</head>
+<body>
+<header>
+<center>
+<table class="Menu">
+        <tr>
+            <td class="TMenu"><img height="100"width="200"src="logo.png" alt=""/></td>
+            <td class="x6">Hola</td>
+            <td class="x6">Hola</td>
+            <td class="x6">Hola</td>
+            <td class="x6">Hola</td>
+            <td class="x6">Hola</td>
+            <td class="x6">Hola</td>
+            <td class="x6">Hola</td>
+            <td class="Carrito">Carrito</td>
+        </tr>
+    </table>
+    <br><br>
+<table>
+<tr>
+<td><img class="logos" height="200"width="200"src="TENIS-NIKE-.jpg" alt=""/></td>
+<td><form id="CantidadEnCarrito1"></td>
+<td class="Descripcion1">Tenis Nike Modelo 1</td>
+
+<td id="Cantidad1.0"></td>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const CantidadEnCarrito1 = localStorage.getItem('CantidadEnCarrito1');
+    if (CantidadEnCarrito1) {
+    document.getElementById('Cantidad1.0').innerText = "Cantidad:" + CantidadEnCarrito1;
+    } else {
+    document.getElementById('Cantidad1.0').innerText = 'Cantidad:'+0;
+    }
+    });
+    </script>
+<td class="x4">Hola</td>
+<td>Precio Unitario $3000</td>
+<td class="x4">Hola</td>
+<td id="PrecioTotal1"></td>
+       <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio1= new Number(3000);
+        let PrecioFinal1=localStorage.getItem('CantidadEnCarrito1')*Precio1;
+        document.getElementById('PrecioTotal1').innerText = "Precio Total $" + PrecioFinal1;
+        });
+        </script>
+        <td class="x4">Hola</td>       
+<td><button id="EliminarPro1">Eliminar</button>
+     <script>
+    document.getElementById('EliminarPro1').addEventListener('click', function() {
+    localStorage.removeItem('CantidadEnCarrito1');
+    });
+     </script></td>
+</form>
+</tr>
+
+<tr>
+<td><img class="logos" height="200"width="200"src="tenis nike 2.jpg" alt=""/></td>
+<td><form id="CantidadEnCarrito2"></td>
+<td class="Descripcion2">Tenis Nike Modelo 2</td>
+
+<td id="Cantidad2.0"></td>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito2 = localStorage.getItem('CantidadEnCarrito2');
+        if (CantidadEnCarrito2) {
+        document.getElementById('Cantidad2.0').innerText = "Cantidad:" + CantidadEnCarrito2;
+        } else {
+        document.getElementById('Cantidad2.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+<td class="x4">Hola</td>
+<td>Precio Unitario $2700</td>
+<td class="x4">Hola</td>
+<td id="PrecioTotal2"></td>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+    let Precio2= new Number(2700);
+    let PrecioFinal2=localStorage.getItem('CantidadEnCarrito2')*Precio2;
+    document.getElementById('PrecioTotal2').innerText = "Precio Total $" + PrecioFinal2;
+    });
+    </script>
+    <td class="x4">Hola</td> 
+<td><button id="EliminarPro2">Eliminar</button>
+    <script>
+   document.getElementById('EliminarPro2').addEventListener('click', function() {
+   localStorage.removeItem('CantidadEnCarrito2');
+   });
+    </script></td>
+</form>
+</tr>
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="tenis nike 3.jpg" alt=""/></td>
+    <td><form id="CantidadEnCarrito3"></td>
+    <td class="Descripcion3">Tenis Nike Modelo 3</td>
+    
+    <td id="Cantidad3.0"></td>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const CantidadEnCarrito3 = localStorage.getItem('CantidadEnCarrito3');
+            if (CantidadEnCarrito3) {
+            document.getElementById('Cantidad3.0').innerText = "Cantidad:" + CantidadEnCarrito3;
+            } else {
+            document.getElementById('Cantidad3.0').innerText = 'Cantidad:'+0;
+            }
+            });
+            </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $1500</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal3"></td>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio3= new Number(1500);
+        let PrecioFinal3=localStorage.getItem('CantidadEnCarrito3')*Precio3;
+        document.getElementById('PrecioTotal3').innerText = "Precio Total $" + PrecioFinal3;
+        });
+        </script>
+        <td class="x4">Hola</td>
+    <td><button id="EliminarPro3">Eliminar</button>
+        <script>
+       document.getElementById('EliminarPro3').addEventListener('click', function() {
+       localStorage.removeItem('CantidadEnCarrito3');
+       });
+        </script></td>
+    </form>
+    </tr>
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="tenis nike 4.jpg" alt=""/></td>
+    <td><form id="CantidadEnCarrito4"></td>
+    <td class="Descripcion4">Tenis Nike Modelo 4</td>
+    
+    <td id="Cantidad4.0"></td>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito4 = localStorage.getItem('CantidadEnCarrito4');
+        if (CantidadEnCarrito4) {
+        document.getElementById('Cantidad4.0').innerText = "Cantidad:" + CantidadEnCarrito4;
+        } else {
+        document.getElementById('Cantidad4.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+        <td class="x4">Hola</td>
+        <td>Precio Unitario $1900</td>
+        <td class="x4">Hola</td>
+        <td id="PrecioTotal4"></td>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+            let Precio4= new Number(1900);
+            let PrecioFinal4=localStorage.getItem('CantidadEnCarrito4')*Precio4;
+            document.getElementById('PrecioTotal4').innerText = "Precio Total $" + PrecioFinal4;
+            });
+            </script>
+            <td class="x4">Hola</td>
+        <td><button id="EliminarPro4">Eliminar</button>
+            <script>
+           document.getElementById('EliminarPro4').addEventListener('click', function() {
+           localStorage.removeItem('CantidadEnCarrito4');
+        });
+</script></td>
+</form>
+</tr>
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="pc.jpeg" alt=""/></td>
+    <td><form id="CantidadEnCarrito5"></td>
+    <td class="Descripcion5">Pc Gamer</td>
+    
+    <td id="Cantidad5.0"></td>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const CantidadEnCarrito5 = localStorage.getItem('CantidadEnCarrito5');
+            if (CantidadEnCarrito5) {
+            document.getElementById('Cantidad5.0').innerText = "Cantidad:" + CantidadEnCarrito5;
+            } else {
+            document.getElementById('Cantidad5.0').innerText = 'Cantidad:'+0;
+            }
+            });
+            </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $5700</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal5">Precio Total</td>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio5= new Number(5700);
+        let PrecioFinal5=localStorage.getItem('CantidadEnCarrito5')*Precio5;
+        document.getElementById('PrecioTotal5').innerText = "Precio Total $" + PrecioFinal5;
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td><button id="EliminarPro5">Eliminar</button>
+        <script>
+       document.getElementById('EliminarPro5').addEventListener('click', function() {
+       localStorage.removeItem('CantidadEnCarrito5');
+       });
+        </script></td>
+    </form>
+    </tr>
+
+<tr>
+<td><img class="logos" height="200"width="200"src="tenis nike 2.jpg" alt=""/></td>
+<td><form id="CantidadEnCarrito6"></td>
+<td class="Descripcion6">Escritorio Gamer</td>
+
+<td id="Cantidad6.0"></td>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito6 = localStorage.getItem('CantidadEnCarrito6');
+        if (CantidadEnCarrito6) {
+        document.getElementById('Cantidad6.0').innerText = "Cantidad:" + CantidadEnCarrito6;
+        } else {
+        document.getElementById('Cantidad6.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+<td class="x4">Hola</td>
+<td>Precio Unitario $3200</td>
+<td class="x4">Hola</td>
+<td id="PrecioTotal6"></td>
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+    let Precio6= new Number(3200);
+    let PrecioFinal6=localStorage.getItem('CantidadEnCarrito6')*Precio6;
+    document.getElementById('PrecioTotal6').innerText = "Precio Total $" + PrecioFinal6;
+    });
+    </script>
+<td class="x4">Hola</td>
+<td><button id="EliminarPro6">Eliminar</button>
+    <script>
+   document.getElementById('EliminarPro6').addEventListener('click', function() {
+   localStorage.removeItem('CantidadEnCarrito6');
+   });
+    </script></td>
+</form>
+</tr>
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="mando.jpg" alt=""/></td>
+    <td><form id="CantidadEnCarrito7"></td>
+    <td class="Descripcion7">TMando Razor</td>
+    
+    <td id="Cantidad7.0"></td>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const CantidadEnCarrito7 = localStorage.getItem('CantidadEnCarrito7');
+            if (CantidadEnCarrito7) {
+            document.getElementById('Cantidad7.0').innerText = "Cantidad:" + CantidadEnCarrito7;
+            } else {
+            document.getElementById('Cantidad7.0').innerText = 'Cantidad:'+0;
+            }
+            });
+            </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $2500</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal7"></td>
+    
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+    let Precio7= new Number(2500);
+    let PrecioFinal7=localStorage.getItem('CantidadEnCarrito7')*Precio7;
+    document.getElementById('PrecioTotal7').innerText = "Precio Total $" + PrecioFinal7;
+    });
+    </script>
+    <td class="x4">Hola</td>
+    <td><button id="EliminarPro7">Eliminar</button>
+        <script>
+       document.getElementById('EliminarPro7').addEventListener('click', function() {
+       localStorage.removeItem('CantidadEnCarrito7');
+       });
+        </script></td>
+    </form>
+    </tr>
+<tr>
+<td><img class="logos" height="200"width="200"src="monitor.jpg" alt=""/></td>
+<td><form id="CantidadEnCarrito8"></td>
+<td class="Descripcion8">Monitor Gamer Republic Of Gamers </td>
+
+<td id="Cantidad8.0"></td>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const CantidadEnCarrito8 = localStorage.getItem('CantidadEnCarrito8');
+    if (CantidadEnCarrito8) {
+    document.getElementById('Cantidad8.0').innerText = "Cantidad:" + CantidadEnCarrito8;
+    } else {
+    document.getElementById('Cantidad8.0').innerText = 'Cantidad:'+0;
+    }
+    });
+    </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $4000</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal8"></td>
+    
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+    let Precio8= new Number(4000);
+    let PrecioFinal8=localStorage.getItem('CantidadEnCarrito8')*Precio8;
+    document.getElementById('PrecioTotal8').innerText = "Precio Total $" + PrecioFinal8;
+    });
+    </script>
+    <td class="x4">Hola</td>
+    <td><button id="EliminarPro8">Eliminar</button>
+    <script>
+    document.getElementById('EliminarPro8').addEventListener('click', function() {
+    localStorage.removeItem('CantidadEnCarrito8');
+    });
+    </script></td>
+</form>
+</tr>
+
+<tr>
+<td><img class="logos" height="200"width="200"src="Playera cc1.jpeg" alt=""/></td>
+<td><form id="CantidadEnCarrito9"></td>
+<td class="Descripcion9">Playera Calacas Chidas 1</td>
+
+<td id="Cantidad9.0"></td>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const CantidadEnCarrito9 = localStorage.getItem('CantidadEnCarrito9');
+    if (CantidadEnCarrito9) {
+    document.getElementById('Cantidad9.0').innerText = "Cantidad:" + CantidadEnCarrito9;
+    } else {
+    document.getElementById('Cantidad9.0').innerText = 'Cantidad:'+0;
+    }
+    });
+</script>
+<td class="x4">Hola</td>
+<td>Precio Unitario $200</td>
+<td class="x4">Hola</td>
+<td id="PrecioTotal9"></td>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+    let Precio9= new Number(200);
+    let PrecioFinal9=localStorage.getItem('CantidadEnCarrito9')*Precio9;
+    document.getElementById('PrecioTotal9').innerText = "Precio Total $" + PrecioFinal9;
+    });
+    </script>
+<td class="x4">Hola</td>
+ <td><button id="EliminarPro9">Eliminar</button>
+    <script>
+    document.getElementById('EliminarPro9').addEventListener('click', function() {
+    localStorage.removeItem('CantidadEnCarrito9');
+     });
+    </script></td>
+</form>
+</tr>
+
+<tr>
+<td><img class="logos" height="200"width="200"src="Playera cc2.jpeg" alt=""/></td>
+<td><form id="CantidadEnCarrito10"></td>
+<td class="Descripcion10">Playera Calacas Chidas 2</td>
+
+<td id="Cantidad10.0"></td>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const CantidadEnCarrito10 = localStorage.getItem('CantidadEnCarrito10');
+    if (CantidadEnCarrito10) {
+    document.getElementById('Cantidad10.0').innerText = "Cantidad:" + CantidadEnCarrito10;
+    } else {
+    document.getElementById('Cantidad10.0').innerText = 'Cantidad:'+0;
+    }
+    });
+    </script>
+<td class="x4">Hola</td>
+<td>Precio Unitario $200</td>
+<td class="x4">Hola</td>
+<td id="PrecioTotal10"></td>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+    let Precio10= new Number(200);
+    let PrecioFinal10=localStorage.getItem('CantidadEnCarrito10')*Precio10;
+    document.getElementById('PrecioTotal10').innerText = "Precio Total $" + PrecioFinal10;
+    });
+    </script>
+<td class="x4">Hola</td>                
+<td><button id="EliminarPro10">Eliminar</button>
+    <script>
+     document.getElementById('EliminarPro10').addEventListener('click', function() {
+     localStorage.removeItem('CantidadEnCarrito10');
+     });
+    </script></td>
+</form>
+</tr>
+
+<tr>
+<td><img class="logos" height="200"width="200"src="Playera cc3.jpg" alt=""/></td>
+<td><form id="CantidadEnCarrito11"></td>
+<td class="Descripcion11">Playera calacas chidas 3</td>
+
+<td id="Cantidad11.0"></td>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const CantidadEnCarrito11 = localStorage.getItem('CantidadEnCarrito11');
+     if (CantidadEnCarrito11) {
+    document.getElementById('Cantidad11.0').innerText = "Cantidad:" + CantidadEnCarrito11;
+    } else {
+    document.getElementById('Cantidad11.0').innerText = 'Cantidad:'+0;
+     }
+     });
+    </script>
+<td class="x4">Hola</td>
+<td>Precio Unitario $200</td>
+<td class="x4">Hola</td>
+<td id="PrecioTotal11"></td>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+    let Precio11= new Number(200);
+    let PrecioFinal11=localStorage.getItem('CantidadEnCarrito11')*Precio11;
+    document.getElementById('PrecioTotal11').innerText = "Precio Total $" + PrecioFinal11;
+    });
+    </script>
+<td class="x4">Hola</td>                    
+<td><button id="EliminarPro11">Eliminar</button>
+    <script>
+        document.getElementById('EliminarPro11').addEventListener('click', function() {
+     localStorage.removeItem('CantidadEnCarrito11');
+     });
+    </script></td>
+</form>
+</tr>
+<tr>
+<td><img class="logos" height="200"width="200"src="Playera cc4.jpg" alt=""/></td>
+<td><form id="CantidadEnCarrito12"></td>
+<td class="Descripcion12">Playera Calacas Chidas 4</td>
+
+<td id="Cantidad12.0"></td>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const CantidadEnCarrito12 = localStorage.getItem('CantidadEnCarrito12');
+    if (CantidadEnCarrito12) {
+    document.getElementById('Cantidad12.0').innerText = "Cantidad:" + CantidadEnCarrito12;
+    } else {
+    document.getElementById('Cantidad12.0').innerText = 'Cantidad:'+0;
+    }
+    });
+    </script>
+<td class="x4">Hola</td>
+<td>Precio Unitario $200</td>
+<td class="x4">Hola</td>
+<td id="PrecioTotal12"></td>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+    let Precio12= new Number(200);
+    let PrecioFinal12=localStorage.getItem('CantidadEnCarrito12')*Precio12;
+    document.getElementById('PrecioTotal12').innerText = "Precio Total $" + PrecioFinal12;
+    });
+    </script>
+    <td class="x4">Hola</td>                    
+<td><button id="EliminarPro12">Eliminar</button>
+    <script>
+    document.getElementById('EliminarPro12').addEventListener('click', function() {
+    localStorage.removeItem('CantidadEnCarrito12');
+    });
+    </script></td>
+</form>
+</tr>
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="juego de brocas.jpeg" alt=""/></td>
+    <td><form id="CantidadEnCarrito13"></td>
+    <td class="Descripcion13">Juego De Brocas</td>
+    
+    <td id="Cantidad13.0"></td>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito13 = localStorage.getItem('CantidadEnCarrito13');
+        if (CantidadEnCarrito13) {
+        document.getElementById('Cantidad13.0').innerText = "Cantidad:" + CantidadEnCarrito13;
+        } else {
+        document.getElementById('Cantidad13.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $500</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal13"></td>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio13= new Number(500);
+        let PrecioFinal13=localStorage.getItem('CantidadEnCarrito13')*Precio13;
+        document.getElementById('PrecioTotal13').innerText = "Precio Total $" + PrecioFinal13;
+        });
+        </script>
+    <td class="x4">Hola</td>                        
+    <td><button id="EliminarPro13">Eliminar</button>
+        <script>
+        document.getElementById('EliminarPro13').addEventListener('click', function() {
+        localStorage.removeItem('CantidadEnCarrito13');
+        });
+        </script></td>
+    </form>
+</tr>
+<tr>
+    <td><img class="logos" height="200"width="200"src="juego de llaves.jpeg" alt=""/></td>
+    <td><form id="CantidadEnCarrito14"></td>
+    <td class="Descripcion14">Juego De Llaves</td>
+    
+    <td id="Cantidad14.0"></td>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito14 = localStorage.getItem('CantidadEnCarrito14');
+        if (CantidadEnCarrito14) {
+        document.getElementById('Cantidad14.0').innerText = "Cantidad:" + CantidadEnCarrito14;
+        } else {
+        document.getElementById('Cantidad14.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $500</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal14"></td>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio14= new Number(500);
+        let PrecioFinal14=localStorage.getItem('CantidadEnCarrito14')*Precio14;
+        document.getElementById('PrecioTotal14').innerText = "Precio Total $" + PrecioFinal14;
+        });
+        </script>
+    <td class="x4">Hola</td>                        
+    <td><button id="EliminarPro14">Eliminar</button>
+        <script>
+        document.getElementById('EliminarPro14').addEventListener('click', function() {
+        localStorage.removeItem('CantidadEnCarrito14');
+        });
+        </script></td>
+    </form>
+    </tr>
+
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="rotomartillo.jpg" alt=""/></td>
+    <td><form id="CantidadEnCarrito15"></td>
+    <td class="Descripcion15">Rotomartillo</td>
+    
+    <td id="Cantidad15.0"></td>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito15 = localStorage.getItem('CantidadEnCarrito15');
+        if (CantidadEnCarrito15) {
+        document.getElementById('Cantidad15.0').innerText = "Cantidad:" + CantidadEnCarrito15;
+        } else {
+        document.getElementById('Cantidad15.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $2000</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal15"></td>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio15= new Number(2000);
+        let PrecioFinal15=localStorage.getItem('CantidadEnCarrito15')*Precio15;
+        document.getElementById('PrecioTotal15').innerText = "Precio Total $" + PrecioFinal15;
+        });
+        </script>
+    <td class="x4">Hola</td>                        
+    <td><button id="EliminarPro15">Eliminar</button>
+        <script>
+        document.getElementById('EliminarPro15').addEventListener('click', function() {
+        localStorage.removeItem('CantidadEnCarrito15');
+        });
+        </script></td>
+    </form>
+</tr>
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="taladro.jpeg" alt=""/></td>
+    <td><form id="CantidadEnCarrito16"></td>
+    <td class="Descripcion16">Taladro</td>
+    
+    <td id="Cantidad16.0"></td>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito16 = localStorage.getItem('CantidadEnCarrito16');
+        if (CantidadEnCarrito16) {
+        document.getElementById('Cantidad16.0').innerText = "Cantidad:" + CantidadEnCarrito16;
+        } else {
+        document.getElementById('Cantidad16.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $1300</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal16"></td>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio16= new Number(1300);
+        let PrecioFinal16=localStorage.getItem('CantidadEnCarrito16')*Precio16;
+        document.getElementById('PrecioTotal16').innerText = "Precio Total $" + PrecioFinal16;
+        });
+        </script>
+    <td class="x4">Hola</td>                        
+    <td><button id="EliminarPro16">Eliminar</button>
+        <script>
+        document.getElementById('EliminarPro16').addEventListener('click', function() {
+        localStorage.removeItem('CantidadEnCarrito16');
+        });
+        </script></td>
+    </form>
+</tr>
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="xbox s.jpg" alt=""/></td>
+    <td><form id="CantidadEnCarrito17"></td>
+    <td class="Descripcion17">Xbox series S</td>
+    
+    <td id="Cantidad17.0"></td>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito17 = localStorage.getItem('CantidadEnCarrito17');
+        if (CantidadEnCarrito17) {
+        document.getElementById('Cantidad17.0').innerText = "Cantidad:" + CantidadEnCarrito17;
+        } else {
+        document.getElementById('Cantidad17.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $5000</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal17"></td>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio17= new Number(5000);
+        let PrecioFinal17=localStorage.getItem('CantidadEnCarrito17')*Precio17;
+        document.getElementById('PrecioTotal17').innerText = "Precio Total $" + PrecioFinal17;
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td><button id="EliminarPro17">Eliminar</button>
+        <script>
+        document.getElementById('EliminarPro17').addEventListener('click', function() {
+        localStorage.removeItem('CantidadEnCarrito17');
+        });
+        </script></td>
+    </form>
+</tr>
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="XBOX X.jpg" alt=""/></td>
+    <td><form id="CantidadEnCarrito18"></td>
+    <td class="Descripcion18">Xbox series X</td>
+    <td id="Cantidad18.0"></td>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito18 = localStorage.getItem('CantidadEnCarrito18');
+        if (CantidadEnCarrito18) {
+        document.getElementById('Cantidad18.0').innerText = "Cantidad:" + CantidadEnCarrito18;
+        } else {
+        document.getElementById('Cantidad18.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $10000</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal18"></td>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio18= new Number(10000);
+        let PrecioFinal18=localStorage.getItem('CantidadEnCarrito18')*Precio18;
+        document.getElementById('PrecioTotal18').innerText = "Precio Total $" + PrecioFinal18;
+        });
+        </script>
+<td class="x4">Hola</td>                            
+    <td><button id="EliminarPro18">Eliminar</button>
+        <script>
+        document.getElementById('EliminarPro18').addEventListener('click', function() {
+        localStorage.removeItem('CantidadEnCarrito18');
+        });
+        </script></td>
+    </form>
+</tr>
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="NINTENDO SWITCH.jpg" alt=""/></td>
+    <td><form id="CantidadEnCarrito19"></td>
+    <td class="Descripcion19">Nintendo Switch</td>
+    <td id="Cantidad19.0"></td>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito19 = localStorage.getItem('CantidadEnCarrito19');
+        if (CantidadEnCarrito19) {
+        document.getElementById('Cantidad19.0').innerText = "Cantidad:" + CantidadEnCarrito19;
+        } else {
+        document.getElementById('Cantidad19.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $4500</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal19"></td>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio19= new Number(4500);
+        let PrecioFinal19=localStorage.getItem('CantidadEnCarrito19')*Precio19;
+        document.getElementById('PrecioTotal19').innerText = "Precio Total $" + PrecioFinal19;
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td><button id="EliminarPro19">Eliminar</button>
+        <script>
+        document.getElementById('EliminarPro19').addEventListener('click', function() {
+        localStorage.removeItem('CantidadEnCarrito19');
+        });
+        </script></td>
+    </form>
+</tr>
+
+<tr>
+    <td><img class="logos" height="200"width="200"src="PLAY 5.jpg" alt=""/></td>
+    <td><form id="CantidadEnCarrito20"></td>
+    <td class="Descripcion20">Playstation 5</td>
+    <td id="Cantidad20.0"></td>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const CantidadEnCarrito20 = localStorage.getItem('CantidadEnCarrito20');
+        if (CantidadEnCarrito20) {
+        document.getElementById('Cantidad20.0').innerText = "Cantidad:" + CantidadEnCarrito20;
+        } else {
+        document.getElementById('Cantidad20.0').innerText = 'Cantidad:'+0;
+        }
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td>Precio Unitario $8000</td>
+    <td class="x4">Hola</td>
+    <td id="PrecioTotal20"></td>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+        let Precio20= new Number(8000);
+        let PrecioFinal20=localStorage.getItem('CantidadEnCarrito20')*Precio20;
+        document.getElementById('PrecioTotal20').innerText = "Precio Total $" + PrecioFinal20;
+        });
+        </script>
+    <td class="x4">Hola</td>
+    <td><button id="EliminarPro20">Eliminar</button>
+        <script>
+        document.getElementById('EliminarPro20').addEventListener('click', function() {
+        localStorage.removeItem('CantidadEnCarrito20');
+        });
+        </script></td>
+    </form>
+</tr>
+<tr>  
+<td id="Total">
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+let Precio1= new Number(3000);
+let PrecioFinal1=localStorage.getItem('CantidadEnCarrito1')*Precio1;
+let Precio2= new Number(2700);
+let PrecioFinal2=localStorage.getItem('CantidadEnCarrito2')*Precio2;
+let Precio3= new Number(1500);
+let PrecioFinal3=localStorage.getItem('CantidadEnCarrito3')*Precio3;
+let Precio4= new Number(1900);
+let PrecioFinal4=localStorage.getItem('CantidadEnCarrito4')*Precio4;
+let Precio5= new Number(5700);
+let PrecioFinal5=localStorage.getItem('CantidadEnCarrito5')*Precio5;
+let Precio6= new Number(3200);
+let PrecioFinal6=localStorage.getItem('CantidadEnCarrito6')*Precio6;
+let Precio7= new Number(2500);
+let PrecioFinal7=localStorage.getItem('CantidadEnCarrito7')*Precio7;
+let Precio8= new Number(4000);
+let PrecioFinal8=localStorage.getItem('CantidadEnCarrito8')*Precio8;
+let Precio9= new Number(200);
+let PrecioFinal9=localStorage.getItem('CantidadEnCarrito9')*Precio9;
+let Precio10= new Number(200);
+let PrecioFinal10=localStorage.getItem('CantidadEnCarrito10')*Precio10;
+let Precio11= new Number(200);
+let PrecioFinal11=localStorage.getItem('CantidadEnCarrito11')*Precio11;
+let Precio12= new Number(200);
+let PrecioFinal12=localStorage.getItem('CantidadEnCarrito12')*Precio12;
+let Precio13= new Number(500);
+let PrecioFinal13=localStorage.getItem('CantidadEnCarrito13')*Precio13;
+let Precio14= new Number(500);
+let PrecioFinal14=localStorage.getItem('CantidadEnCarrito14')*Precio14;
+let Precio15= new Number(2000);
+let PrecioFinal15=localStorage.getItem('CantidadEnCarrito15')*Precio15;
+let Precio16= new Number(1300);
+let PrecioFinal16=localStorage.getItem('CantidadEnCarrito16')*Precio16;
+let Precio17= new Number(5000);
+let PrecioFinal17=localStorage.getItem('CantidadEnCarrito17')*Precio17;
+let Precio18= new Number(10000);
+let PrecioFinal18=localStorage.getItem('CantidadEnCarrito18')*Precio18;
+let Precio19= new Number(4500);
+let PrecioFinal19=localStorage.getItem('CantidadEnCarrito19')*Precio19;
+let Precio20= new Number(8000);
+let PrecioFinal20=localStorage.getItem('CantidadEnCarrito20')*Precio20;
+let suma=PrecioFinal1+PrecioFinal2+PrecioFinal3+PrecioFinal4+PrecioFinal5+PrecioFinal6+PrecioFinal7+PrecioFinal8+PrecioFinal9+PrecioFinal10+PrecioFinal11+PrecioFinal12+PrecioFinal13+PrecioFinal14+PrecioFinal15+PrecioFinal16+PrecioFinal17+PrecioFinal18+PrecioFinal20+PrecioFinal19;
+document.getElementById('Total').innerText = "Total $" + suma;
+});
+</script>
+</td>
+<td><input type="button" value="Proceder Compra" onclick="ProcederCompra()"></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
